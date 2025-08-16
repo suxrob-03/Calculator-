@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <nav>
+        <h2>archimetical practices</h2>
+      </nav>
+      <main>
+        <!-- 4 -->
+        <div class="box_4" id="box-4">
+          <div class="calculate_display">
+            <input
+              id="display4"
+              maxlength="1"
+              type="text"
+              placeholder="0."
+              readonly
+            />
+          </div>
+          <div class="buttonBin">
+            <button id="clean" onclick="cleaning4()">CE</button>
+            <button onclick="cleanOne4()">DE</button>
+            <button onclick="addDisplay4('*')">*</button>
+
+            <button onclick="addDisplay4('7')">7</button>
+            <button onclick="addDisplay4('8')">8</button>
+            <button onclick="addDisplay4('9')">9</button>
+            <button onclick="addDisplay4('-')">-</button>
+
+            <button onclick="addDisplay4('4')">4</button>
+            <button onclick="addDisplay4('5')">5</button>
+            <button onclick="addDisplay4('6')">6</button>
+            <button onclick="addDisplay4('+')">+</button>
+
+            <button onclick="addDisplay4('3')">3</button>
+            <button onclick="addDisplay4('2')">2</button>
+            <button onclick="addDisplay4('1')">1</button>
+            <button onclick="addDisplay4('/')">/</button>
+            <button onclick="addDisplay4('0')">0</button>
+
+            <button onclick="addDisplay4('.')">.</button>
+            <button onclick="calculate4()">=</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
